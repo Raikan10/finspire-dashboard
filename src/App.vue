@@ -8,8 +8,12 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item to="/" @click.prevent="isSandbox=false">Dashboard</b-nav-item>
-            <b-nav-item to="/sandbox" @click.prevent="isSandbox=true">Sandbox</b-nav-item>
+            <b-nav-item to="/" @click.prevent="isSandbox = false"
+              >Dashboard</b-nav-item
+            >
+            <b-nav-item to="/sandbox" @click.prevent="isSandbox = true"
+              >Sandbox</b-nav-item
+            >
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto" v-if="!isSandbox">
             <b-nav-form>

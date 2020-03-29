@@ -61,7 +61,7 @@
 </style>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   data() {
@@ -95,7 +95,9 @@ export default {
       // console.log(url)
       axios
         .get(url)
-        .then(response => (this.response = JSON.stringify(response,undefined,4)))
+        .then(
+          response => (this.response = JSON.stringify(response, undefined, 4))
+        )
         .catch(error => console.log(error));
     },
     onReset() {
