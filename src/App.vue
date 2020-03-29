@@ -23,6 +23,7 @@
                 placeholder="Enter your key"
                 v-model="privateKey"
                 v-if="!isDecrypt"
+                type="password"
               ></b-form-input>
               <b-button
                 size="sm"
