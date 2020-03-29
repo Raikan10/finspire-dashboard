@@ -74,9 +74,9 @@ export default {
       },
       vms: [
         { text: "Select One", value: null },
-        "40.115.182.90",
-        "52.246.167.29",
-        "52.246.177.137",
+        "vm1-team27-finspire.japaneast.cloudapp.azure.com",
+        "vm2-team27-finspire.japaneast.cloudapp.azure.com",
+        "vm3-team27-finspire.japaneast.cloudapp.azure.com",
         "127.0.0.1"
       ],
       endpoints: [
@@ -91,7 +91,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      var url = "http://" + this.form.vm + ":5000/" + this.form.endpoint;
+      var url = "https://" + this.form.vm + ":5000/" + this.form.endpoint;
       // console.log(url)
       axios
         .get(url)
