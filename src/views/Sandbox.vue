@@ -98,7 +98,7 @@ export default {
         .then(
           response => (this.response = JSON.stringify(response, undefined, 4))
         )
-        .catch(error => console.log(error));
+        .catch(error => this.response = error);
     },
     onReset() {
       // Reset our form values
