@@ -12,6 +12,7 @@ Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
 Vue.use(VueSvgGauge);
 
+
 Vue.config.productionTip = false;
 
 new Vue({

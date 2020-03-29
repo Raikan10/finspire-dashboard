@@ -145,7 +145,7 @@ img {
 import SimpleCrypto from "simple-crypto-js";
 
 export default {
-  name: "Home",
+  name: "Dashboard",
   data() {
     return {
       username: "mark420",

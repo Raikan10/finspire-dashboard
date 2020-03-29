@@ -8,10 +8,10 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item to="/">Dashboard</b-nav-item>
-            <b-nav-item to="/about" disabled>Sandbox</b-nav-item>
+            <b-nav-item to="/" @click.prevent="isSandbox=false">Dashboard</b-nav-item>
+            <b-nav-item to="/sandbox" @click.prevent="isSandbox=true">Sandbox</b-nav-item>
           </b-navbar-nav>
-          <b-navbar-nav class="ml-auto">
+          <b-navbar-nav class="ml-auto" v-if="!isSandbox">
             <b-nav-form>
               <b-form-input
                 size="sm"
@@ -43,7 +43,8 @@ export default {
   data() {
     return {
       privateKey: "",
-      crypto: "Decrypt"
+      crypto: "Decrypt",
+      isSandbox: false
     };
   },
   computed: {
